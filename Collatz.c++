@@ -42,24 +42,24 @@ int collatz_eval (int i, int j) {
 
     cache_array[0] = 0;
 
-    int start = i;
     int end = j+1;
 
     //iterates from i to j
-    for(start; start < end; start++){
+    for(int start = i; start < end; start++){
 
         int cycle = 0;
+        int val = start;
 
-        while(start != 1){
+        while(val != 1){
 
             //even
-            if((start & 1) == 0){
-                start = start/2;
+            if((val & 1) == 0){
+                val = val/2;
             }
 
             //odd
             else{
-                start = (start * 3) + 1;
+                val = (val * 3) + 1;
             }
 
             //update cycle counter
@@ -74,9 +74,9 @@ int collatz_eval (int i, int j) {
     //search
     
     int ret_value = cache_array[i];
-    for(i; i < end; i++){
+    for(int begin = i; begin < end; begin++){
 
-        int temp = cache_array[i];
+        int temp = cache_array[begin];
 
         if(temp > ret_value){
             ret_value = temp;
