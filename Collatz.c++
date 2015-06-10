@@ -48,7 +48,7 @@ int collatz_eval (int i, int j) {
     for(int start = i; start < end; start++){
 
         //start cycle at 1 because count first
-        int cycle = 1;
+        int cycle = 5;
         int val = start;
 
         while(val != 1){
