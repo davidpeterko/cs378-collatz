@@ -71,8 +71,7 @@ int collatz_eval (int i, int j) {
     }
 
 
-    //cache array should have the specified cycle values at that position
-    //search
+    /** SEARCH CACHE ARRAY FOR ALL SAVED VALUES **/
     
     int ret_value = cache_array[i];
     for(int begin = i; begin < end; begin++){
