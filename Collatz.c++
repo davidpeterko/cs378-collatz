@@ -37,8 +37,20 @@ pair<int, int> collatz_read (const string& s) {
 // collatz_eval
 // ------------
 
-int collatz_eval (int i, int j) {
-    // <your code>
+int collatz_eval (int i, int j) {    
+    //account for backwards ranges>?
+    //account for 0 input?
+
+    /** for j > i, doesnt work**/
+    /*
+    if( j > i){
+        
+        int temp = i;   //save previous value of i
+
+        i = j;          // i becomes the higher j
+        j = temp;       //j becomes temp which is the previous i that was overwrote
+    }
+    */
 
     cache_array[0] = 0;
 
