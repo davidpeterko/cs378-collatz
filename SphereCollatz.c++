@@ -16,6 +16,8 @@
 // includes
 // --------
 
+using namespace std;
+
 #include <cassert>  // assert
 #include <iostream> // endl, istream, ostream
 #include <sstream>  // istringstream
@@ -24,8 +26,10 @@
 
 int cache_array[1000000];    //should i not make it 1 millino and just take j-i and make that cache size?
 
-
-using namespace std;
+void collatz_solve (istream& r, ostream& w);
+void collatz_print (ostream& w, int i, int j, int v);
+int collatz_eval (int i, int j);
+pair<int, int> collatz_read (const string& s);
 
 // ----
 // main
