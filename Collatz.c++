@@ -16,7 +16,7 @@
 
 #include "Collatz.h"
 
-int* cache_array = new int[1000000];    //should i not make it 1 millino and just take j-i and make that cache size?
+int cache_array[1000000];    //should i not make it 1 millino and just take j-i and make that cache size?
 
 
 using namespace std;
