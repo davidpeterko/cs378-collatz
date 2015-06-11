@@ -38,9 +38,10 @@ pair<int, int> collatz_read (const string& s) {
 // ------------
 
 int collatz_eval (int i, int j) {    
-    //account for backwards ranges>?
-    //account for 0 input?
+    assert(i > 0);
+    assert(j > 0);
 
+    //for backwards ranges?
     /** for j > i, doesnt work**/
     /*
     if( j > i){
@@ -78,6 +79,8 @@ int collatz_eval (int i, int j) {
             //update cycle counter
             cycle++;
         }
+
+        assert(cycle > 0);
 
         cache_array[start] = cycle;
     }
