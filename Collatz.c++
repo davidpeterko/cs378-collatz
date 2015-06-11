@@ -16,8 +16,7 @@
 
 #include "Collatz.h"
 
-//make cache size 1 million
-int* cache_array = new int[1000000];
+int* cache_array = new int[1000000];    //should i not make it 1 millino and just take j-i and make that cache size?
 
 
 using namespace std;
@@ -41,26 +40,17 @@ int collatz_eval (int i, int j) {
     assert(i > 0);
     assert(j > 0);
 
-    //for backwards ranges?
-    /** for j > i, doesnt work**/
-    /*
-    if( j > i){
-        
-        int temp = i;   //save previous value of i
-
-        i = j;          // i becomes the higher j
-        j = temp;       //j becomes temp which is the previous i that was overwrote
+    //Swaps values if i j ranges are backwards
+    if( i > j){
+        int temp = i;   
+        i = j;          
+        j = temp;       
     }
-    */
-
-    cache_array[0] = 0;
 
     int end = j+1;
 
-    //iterates from i to j
     for(int start = i; start < end; start++){
 
-        //start cycle at 1 because count first
         int cycle = 1;
         int val = start;
 
@@ -98,7 +88,8 @@ int collatz_eval (int i, int j) {
         }
     }
     
-    return ret_value;}
+    return ret_value;
+}
 
 // -------------
 // collatz_print
