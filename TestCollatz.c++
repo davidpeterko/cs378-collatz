@@ -50,14 +50,14 @@ TEST(CollatzFixture, read3) {
 
 
 TEST(CollatzFixture, read4) {
-    string s("1 10\n");
+    string s("-10 10\n");
     const pair<int, int> p = collatz_read(s);
     ASSERT_EQ(-10, p.first);
     ASSERT_EQ( 10, p.second);}
 
 
 TEST(CollatzFixture, read5) {
-    string s("1 10\n");
+    string s("8 -8\n");
     const pair<int, int> p = collatz_read(s);
     ASSERT_EQ( 8, p.first);
     ASSERT_EQ(-8, p.second);}

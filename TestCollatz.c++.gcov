@@ -1,0 +1,1234 @@
+        -:    0:Source:TestCollatz.c++
+        -:    0:Graph:TestCollatz.gcno
+        -:    0:Data:TestCollatz.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:// --------------------------------
+        -:    2:// projects/collatz/TestCollatz.c++
+        -:    3:// Copyright (C) 2015
+        -:    4:// Glenn P. Downing
+        -:    5:// --------------------------------
+        -:    6:
+        -:    7:// https://code.google.com/p/googletest/wiki/V1_7_Primer#Basic_Assertions
+        -:    8:
+        -:    9:// --------
+        -:   10:// includes
+        -:   11:// --------
+        -:   12:
+        -:   13:#include <iostream> // cout, endl
+        -:   14:#include <sstream>  // istringtstream, ostringstream
+        -:   15:#include <string>   // string
+        -:   16:#include <utility>  // pair
+        -:   17:
+        -:   18:#include "gtest/gtest.h"
+        -:   19:
+        -:   20:#include "Collatz.h"
+        -:   21:
+        -:   22:using namespace std;
+        -:   23:
+        -:   24:// -----------
+        -:   25:// TestCollatz
+        -:   26:// -----------
+        -:   27:
+        -:   28:// ----
+        -:   29:// read
+        -:   30:// ----
+        -:   31:
+function _ZN25CollatzFixture_read1_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN25CollatzFixture_read1_TestD2Ev called 1 returned 100% blocks executed 75%
+function _ZN25CollatzFixture_read1_Test8TestBodyEv called 1 returned 100% blocks executed 40%
+function _ZN25CollatzFixture_read1_TestC2Ev called 1 returned 100% blocks executed 100%
+        5:   32:TEST(CollatzFixture, read1) {
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+call    4 returned 100%
+call    5 returned 100%
+call    6 returned 100%
+branch  7 taken 0% (fallthrough)
+branch  8 taken 100%
+call    9 never executed
+call   10 returned 100%
+        1:   33:    string s("1 10\n");
+call    0 returned 100%
+call    1 returned 100%
+branch  2 taken 100% (fallthrough)
+branch  3 taken 0% (throw)
+call    4 returned 100%
+        1:   34:    const pair<int, int> p = collatz_read(s);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:   35:    ASSERT_EQ( 1, p.first);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+call    3 returned 100%
+branch  4 taken 0% (fallthrough)
+branch  5 taken 100%
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+call   12 never executed
+branch 13 never executed
+branch 14 never executed
+call   15 never executed
+branch 16 never executed
+branch 17 never executed
+call   18 never executed
+call   19 never executed
+call   20 returned 100%
+branch 21 taken 100%
+branch 22 taken 0%
+call   23 never executed
+call   24 never executed
+call   25 never executed
+        1:   36:    ASSERT_EQ(10, p.second);}
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+call    3 returned 100%
+branch  4 taken 0% (fallthrough)
+branch  5 taken 100%
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+call   12 never executed
+branch 13 never executed
+branch 14 never executed
+call   15 never executed
+branch 16 never executed
+branch 17 never executed
+call   18 never executed
+call   19 never executed
+call   20 returned 100%
+branch 21 taken 100%
+branch 22 taken 0%
+call   23 returned 100%
+branch 24 taken 100%
+branch 25 taken 0%
+call   26 never executed
+call   27 never executed
+call   28 never executed
+call   29 never executed
+call   30 never executed
+        -:   37:
+function _ZN25CollatzFixture_read2_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN25CollatzFixture_read2_TestD2Ev called 1 returned 100% blocks executed 75%
+function _ZN25CollatzFixture_read2_Test8TestBodyEv called 1 returned 100% blocks executed 40%
+function _ZN25CollatzFixture_read2_TestC2Ev called 1 returned 100% blocks executed 100%
+        5:   38:TEST(CollatzFixture, read2) {
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+call    4 returned 100%
+call    5 returned 100%
+call    6 returned 100%
+branch  7 taken 0% (fallthrough)
+branch  8 taken 100%
+call    9 never executed
+call   10 returned 100%
+        1:   39:    string s("55 100\n");
+call    0 returned 100%
+call    1 returned 100%
+branch  2 taken 100% (fallthrough)
+branch  3 taken 0% (throw)
+call    4 returned 100%
+        1:   40:    const pair<int, int> p = collatz_read(s);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:   41:    ASSERT_EQ( 55, p.first);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+call    3 returned 100%
+branch  4 taken 0% (fallthrough)
+branch  5 taken 100%
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+call   12 never executed
+branch 13 never executed
+branch 14 never executed
+call   15 never executed
+branch 16 never executed
+branch 17 never executed
+call   18 never executed
+call   19 never executed
+call   20 returned 100%
+branch 21 taken 100%
+branch 22 taken 0%
+call   23 never executed
+call   24 never executed
+call   25 never executed
+        1:   42:    ASSERT_EQ(100, p.second);}
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+call    3 returned 100%
+branch  4 taken 0% (fallthrough)
+branch  5 taken 100%
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+call   12 never executed
+branch 13 never executed
+branch 14 never executed
+call   15 never executed
+branch 16 never executed
+branch 17 never executed
+call   18 never executed
+call   19 never executed
+call   20 returned 100%
+branch 21 taken 100%
+branch 22 taken 0%
+call   23 returned 100%
+branch 24 taken 100%
+branch 25 taken 0%
+call   26 never executed
+call   27 never executed
+call   28 never executed
+call   29 never executed
+call   30 never executed
+        -:   43:
+        -:   44:
+function _ZN25CollatzFixture_read3_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN25CollatzFixture_read3_TestD2Ev called 1 returned 100% blocks executed 75%
+function _ZN25CollatzFixture_read3_Test8TestBodyEv called 1 returned 100% blocks executed 40%
+function _ZN25CollatzFixture_read3_TestC2Ev called 1 returned 100% blocks executed 100%
+        5:   45:TEST(CollatzFixture, read3) {
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+call    4 returned 100%
+call    5 returned 100%
+call    6 returned 100%
+branch  7 taken 0% (fallthrough)
+branch  8 taken 100%
+call    9 never executed
+call   10 returned 100%
+        1:   46:    string s("5 5\n");
+call    0 returned 100%
+call    1 returned 100%
+branch  2 taken 100% (fallthrough)
+branch  3 taken 0% (throw)
+call    4 returned 100%
+        1:   47:    const pair<int, int> p = collatz_read(s);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:   48:    ASSERT_EQ(5, p.first);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+call    3 returned 100%
+branch  4 taken 0% (fallthrough)
+branch  5 taken 100%
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+call   12 never executed
+branch 13 never executed
+branch 14 never executed
+call   15 never executed
+branch 16 never executed
+branch 17 never executed
+call   18 never executed
+call   19 never executed
+call   20 returned 100%
+branch 21 taken 100%
+branch 22 taken 0%
+call   23 never executed
+call   24 never executed
+call   25 never executed
+        1:   49:    ASSERT_EQ(5, p.second);}
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+call    3 returned 100%
+branch  4 taken 0% (fallthrough)
+branch  5 taken 100%
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+call   12 never executed
+branch 13 never executed
+branch 14 never executed
+call   15 never executed
+branch 16 never executed
+branch 17 never executed
+call   18 never executed
+call   19 never executed
+call   20 returned 100%
+branch 21 taken 100%
+branch 22 taken 0%
+call   23 returned 100%
+branch 24 taken 100%
+branch 25 taken 0%
+call   26 never executed
+call   27 never executed
+call   28 never executed
+call   29 never executed
+call   30 never executed
+        -:   50:
+        -:   51:
+function _ZN25CollatzFixture_read4_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN25CollatzFixture_read4_TestD2Ev called 1 returned 100% blocks executed 75%
+function _ZN25CollatzFixture_read4_Test8TestBodyEv called 1 returned 100% blocks executed 40%
+function _ZN25CollatzFixture_read4_TestC2Ev called 1 returned 100% blocks executed 100%
+        5:   52:TEST(CollatzFixture, read4) {
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+call    4 returned 100%
+call    5 returned 100%
+call    6 returned 100%
+branch  7 taken 0% (fallthrough)
+branch  8 taken 100%
+call    9 never executed
+call   10 returned 100%
+        1:   53:    string s("-10 10\n");
+call    0 returned 100%
+call    1 returned 100%
+branch  2 taken 100% (fallthrough)
+branch  3 taken 0% (throw)
+call    4 returned 100%
+        1:   54:    const pair<int, int> p = collatz_read(s);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:   55:    ASSERT_EQ(-10, p.first);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+call    3 returned 100%
+branch  4 taken 0% (fallthrough)
+branch  5 taken 100%
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+call   12 never executed
+branch 13 never executed
+branch 14 never executed
+call   15 never executed
+branch 16 never executed
+branch 17 never executed
+call   18 never executed
+call   19 never executed
+call   20 returned 100%
+branch 21 taken 100%
+branch 22 taken 0%
+call   23 never executed
+call   24 never executed
+call   25 never executed
+        1:   56:    ASSERT_EQ( 10, p.second);}
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+call    3 returned 100%
+branch  4 taken 0% (fallthrough)
+branch  5 taken 100%
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+call   12 never executed
+branch 13 never executed
+branch 14 never executed
+call   15 never executed
+branch 16 never executed
+branch 17 never executed
+call   18 never executed
+call   19 never executed
+call   20 returned 100%
+branch 21 taken 100%
+branch 22 taken 0%
+call   23 returned 100%
+branch 24 taken 100%
+branch 25 taken 0%
+call   26 never executed
+call   27 never executed
+call   28 never executed
+call   29 never executed
+call   30 never executed
+        -:   57:
+        -:   58:
+function _ZN25CollatzFixture_read5_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN25CollatzFixture_read5_TestD2Ev called 1 returned 100% blocks executed 75%
+function _ZN25CollatzFixture_read5_Test8TestBodyEv called 1 returned 100% blocks executed 40%
+function _ZN25CollatzFixture_read5_TestC2Ev called 1 returned 100% blocks executed 100%
+        5:   59:TEST(CollatzFixture, read5) {
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+call    4 returned 100%
+call    5 returned 100%
+call    6 returned 100%
+branch  7 taken 0% (fallthrough)
+branch  8 taken 100%
+call    9 never executed
+call   10 returned 100%
+        1:   60:    string s("8 -8\n");
+call    0 returned 100%
+call    1 returned 100%
+branch  2 taken 100% (fallthrough)
+branch  3 taken 0% (throw)
+call    4 returned 100%
+        1:   61:    const pair<int, int> p = collatz_read(s);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:   62:    ASSERT_EQ( 8, p.first);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+call    3 returned 100%
+branch  4 taken 0% (fallthrough)
+branch  5 taken 100%
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+call   12 never executed
+branch 13 never executed
+branch 14 never executed
+call   15 never executed
+branch 16 never executed
+branch 17 never executed
+call   18 never executed
+call   19 never executed
+call   20 returned 100%
+branch 21 taken 100%
+branch 22 taken 0%
+call   23 never executed
+call   24 never executed
+call   25 never executed
+        1:   63:    ASSERT_EQ(-8, p.second);}
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+call    3 returned 100%
+branch  4 taken 0% (fallthrough)
+branch  5 taken 100%
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+call   12 never executed
+branch 13 never executed
+branch 14 never executed
+call   15 never executed
+branch 16 never executed
+branch 17 never executed
+call   18 never executed
+call   19 never executed
+call   20 returned 100%
+branch 21 taken 100%
+branch 22 taken 0%
+call   23 returned 100%
+branch 24 taken 100%
+branch 25 taken 0%
+call   26 never executed
+call   27 never executed
+call   28 never executed
+call   29 never executed
+call   30 never executed
+        -:   64:
+        -:   65:// ----
+        -:   66:// eval
+        -:   67:// ----
+        -:   68:
+function _ZN26CollatzFixture_eval_1_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN26CollatzFixture_eval_1_TestD2Ev called 1 returned 100% blocks executed 75%
+function _ZN26CollatzFixture_eval_1_Test8TestBodyEv called 1 returned 100% blocks executed 41%
+function _ZN26CollatzFixture_eval_1_TestC2Ev called 1 returned 100% blocks executed 100%
+        5:   69:TEST(CollatzFixture, eval_1) {
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+call    4 returned 100%
+call    5 returned 100%
+call    6 returned 100%
+branch  7 taken 0% (fallthrough)
+branch  8 taken 100%
+call    9 never executed
+call   10 returned 100%
+        1:   70:    const int v = collatz_eval(1, 10);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:   71:    ASSERT_EQ(20, v);}
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+call    3 returned 100%
+branch  4 taken 0% (fallthrough)
+branch  5 taken 100%
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+call   12 never executed
+branch 13 never executed
+branch 14 never executed
+call   15 never executed
+branch 16 never executed
+branch 17 never executed
+call   18 never executed
+call   19 never executed
+call   20 returned 100%
+branch 21 taken 100%
+branch 22 taken 0%
+call   23 never executed
+call   24 never executed
+call   25 never executed
+        -:   72:
+        -:   73:
+function _ZN26CollatzFixture_eval_2_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN26CollatzFixture_eval_2_TestD2Ev called 1 returned 100% blocks executed 75%
+function _ZN26CollatzFixture_eval_2_Test8TestBodyEv called 1 returned 100% blocks executed 41%
+function _ZN26CollatzFixture_eval_2_TestC2Ev called 1 returned 100% blocks executed 100%
+        5:   74:TEST(CollatzFixture, eval_2) {
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+call    4 returned 100%
+call    5 returned 100%
+call    6 returned 100%
+branch  7 taken 0% (fallthrough)
+branch  8 taken 100%
+call    9 never executed
+call   10 returned 100%
+        1:   75:    const int v = collatz_eval(100, 200);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:   76:    ASSERT_EQ(125, v);}
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+call    3 returned 100%
+branch  4 taken 0% (fallthrough)
+branch  5 taken 100%
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+call   12 never executed
+branch 13 never executed
+branch 14 never executed
+call   15 never executed
+branch 16 never executed
+branch 17 never executed
+call   18 never executed
+call   19 never executed
+call   20 returned 100%
+branch 21 taken 100%
+branch 22 taken 0%
+call   23 never executed
+call   24 never executed
+call   25 never executed
+        -:   77:
+        -:   78:
+function _ZN26CollatzFixture_eval_3_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN26CollatzFixture_eval_3_TestD2Ev called 1 returned 100% blocks executed 75%
+function _ZN26CollatzFixture_eval_3_Test8TestBodyEv called 1 returned 100% blocks executed 41%
+function _ZN26CollatzFixture_eval_3_TestC2Ev called 1 returned 100% blocks executed 100%
+        5:   79:TEST(CollatzFixture, eval_3) {
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+call    4 returned 100%
+call    5 returned 100%
+call    6 returned 100%
+branch  7 taken 0% (fallthrough)
+branch  8 taken 100%
+call    9 never executed
+call   10 returned 100%
+        1:   80:    const int v = collatz_eval(201, 210);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:   81:    ASSERT_EQ(89, v);}
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+call    3 returned 100%
+branch  4 taken 0% (fallthrough)
+branch  5 taken 100%
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+call   12 never executed
+branch 13 never executed
+branch 14 never executed
+call   15 never executed
+branch 16 never executed
+branch 17 never executed
+call   18 never executed
+call   19 never executed
+call   20 returned 100%
+branch 21 taken 100%
+branch 22 taken 0%
+call   23 never executed
+call   24 never executed
+call   25 never executed
+        -:   82:
+        -:   83:
+function _ZN26CollatzFixture_eval_4_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN26CollatzFixture_eval_4_TestD2Ev called 1 returned 100% blocks executed 75%
+function _ZN26CollatzFixture_eval_4_Test8TestBodyEv called 1 returned 100% blocks executed 41%
+function _ZN26CollatzFixture_eval_4_TestC2Ev called 1 returned 100% blocks executed 100%
+        5:   84:TEST(CollatzFixture, eval_4) {
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+call    4 returned 100%
+call    5 returned 100%
+call    6 returned 100%
+branch  7 taken 0% (fallthrough)
+branch  8 taken 100%
+call    9 never executed
+call   10 returned 100%
+        1:   85:    const int v = collatz_eval(900, 1000);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:   86:    ASSERT_EQ(174, v);}
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+call    3 returned 100%
+branch  4 taken 0% (fallthrough)
+branch  5 taken 100%
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+call   12 never executed
+branch 13 never executed
+branch 14 never executed
+call   15 never executed
+branch 16 never executed
+branch 17 never executed
+call   18 never executed
+call   19 never executed
+call   20 returned 100%
+branch 21 taken 100%
+branch 22 taken 0%
+call   23 never executed
+call   24 never executed
+call   25 never executed
+        -:   87:
+        -:   88:/** include more here for the .in file? **/
+        -:   89:
+        -:   90:
+        -:   91:// -----
+        -:   92:// print
+        -:   93:// -----
+        -:   94:
+function _ZN26CollatzFixture_print1_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN26CollatzFixture_print1_TestD2Ev called 1 returned 100% blocks executed 75%
+function _ZN26CollatzFixture_print1_Test8TestBodyEv called 1 returned 100% blocks executed 47%
+function _ZN26CollatzFixture_print1_TestC2Ev called 1 returned 100% blocks executed 100%
+        5:   95:TEST(CollatzFixture, print1) {
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+call    4 returned 100%
+call    5 returned 100%
+call    6 returned 100%
+branch  7 taken 0% (fallthrough)
+branch  8 taken 100%
+call    9 never executed
+call   10 returned 100%
+        1:   96:    ostringstream w;
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:   97:    collatz_print(w, 1, 10, 20);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:   98:    ASSERT_EQ("1 10 20\n", w.str());}
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+call    3 returned 100%
+branch  4 taken 100% (fallthrough)
+branch  5 taken 0% (throw)
+call    6 returned 100%
+call    7 returned 100%
+branch  8 taken 0% (fallthrough)
+branch  9 taken 100%
+call   10 never executed
+branch 11 never executed
+branch 12 never executed
+call   13 never executed
+branch 14 never executed
+branch 15 never executed
+call   16 never executed
+branch 17 never executed
+branch 18 never executed
+call   19 never executed
+branch 20 never executed
+branch 21 never executed
+call   22 never executed
+call   23 never executed
+call   24 returned 100%
+branch 25 taken 100%
+branch 26 taken 0%
+call   27 returned 100%
+branch 28 taken 100%
+branch 29 taken 0%
+call   30 never executed
+call   31 never executed
+call   32 never executed
+call   33 never executed
+call   34 never executed
+        -:   99:
+function _ZN26CollatzFixture_print2_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN26CollatzFixture_print2_TestD2Ev called 1 returned 100% blocks executed 75%
+function _ZN26CollatzFixture_print2_Test8TestBodyEv called 1 returned 100% blocks executed 47%
+function _ZN26CollatzFixture_print2_TestC2Ev called 1 returned 100% blocks executed 100%
+        5:  100:TEST(CollatzFixture, print2) {
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+call    4 returned 100%
+call    5 returned 100%
+call    6 returned 100%
+branch  7 taken 0% (fallthrough)
+branch  8 taken 100%
+call    9 never executed
+call   10 returned 100%
+        1:  101:    ostringstream w;
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  102:    collatz_print(w, 100, 200, 125);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  103:    ASSERT_EQ("100 200 125\n", w.str());}
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+call    3 returned 100%
+branch  4 taken 100% (fallthrough)
+branch  5 taken 0% (throw)
+call    6 returned 100%
+call    7 returned 100%
+branch  8 taken 0% (fallthrough)
+branch  9 taken 100%
+call   10 never executed
+branch 11 never executed
+branch 12 never executed
+call   13 never executed
+branch 14 never executed
+branch 15 never executed
+call   16 never executed
+branch 17 never executed
+branch 18 never executed
+call   19 never executed
+branch 20 never executed
+branch 21 never executed
+call   22 never executed
+call   23 never executed
+call   24 returned 100%
+branch 25 taken 100%
+branch 26 taken 0%
+call   27 returned 100%
+branch 28 taken 100%
+branch 29 taken 0%
+call   30 never executed
+call   31 never executed
+call   32 never executed
+call   33 never executed
+call   34 never executed
+        -:  104:
+function _ZN26CollatzFixture_print3_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN26CollatzFixture_print3_TestD2Ev called 1 returned 100% blocks executed 75%
+function _ZN26CollatzFixture_print3_Test8TestBodyEv called 1 returned 100% blocks executed 47%
+function _ZN26CollatzFixture_print3_TestC2Ev called 1 returned 100% blocks executed 100%
+        5:  105:TEST(CollatzFixture, print3) {
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+call    4 returned 100%
+call    5 returned 100%
+call    6 returned 100%
+branch  7 taken 0% (fallthrough)
+branch  8 taken 100%
+call    9 never executed
+call   10 returned 100%
+        1:  106:    ostringstream w;
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  107:    collatz_print(w, 201, 210, 89);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  108:    ASSERT_EQ("201 210 89\n", w.str());}
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+call    3 returned 100%
+branch  4 taken 100% (fallthrough)
+branch  5 taken 0% (throw)
+call    6 returned 100%
+call    7 returned 100%
+branch  8 taken 0% (fallthrough)
+branch  9 taken 100%
+call   10 never executed
+branch 11 never executed
+branch 12 never executed
+call   13 never executed
+branch 14 never executed
+branch 15 never executed
+call   16 never executed
+branch 17 never executed
+branch 18 never executed
+call   19 never executed
+branch 20 never executed
+branch 21 never executed
+call   22 never executed
+call   23 never executed
+call   24 returned 100%
+branch 25 taken 100%
+branch 26 taken 0%
+call   27 returned 100%
+branch 28 taken 100%
+branch 29 taken 0%
+call   30 never executed
+call   31 never executed
+call   32 never executed
+call   33 never executed
+call   34 never executed
+        -:  109:
+function _ZN26CollatzFixture_print4_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN26CollatzFixture_print4_TestD2Ev called 1 returned 100% blocks executed 75%
+function _ZN26CollatzFixture_print4_Test8TestBodyEv called 1 returned 100% blocks executed 47%
+function _ZN26CollatzFixture_print4_TestC2Ev called 1 returned 100% blocks executed 100%
+        5:  110:TEST(CollatzFixture, print4) {
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+call    4 returned 100%
+call    5 returned 100%
+call    6 returned 100%
+branch  7 taken 0% (fallthrough)
+branch  8 taken 100%
+call    9 never executed
+call   10 returned 100%
+        1:  111:    ostringstream w;
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  112:    collatz_print(w, 900, 1000, 174);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  113:    ASSERT_EQ("900 1000 174\n", w.str());}
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+call    3 returned 100%
+branch  4 taken 100% (fallthrough)
+branch  5 taken 0% (throw)
+call    6 returned 100%
+call    7 returned 100%
+branch  8 taken 0% (fallthrough)
+branch  9 taken 100%
+call   10 never executed
+branch 11 never executed
+branch 12 never executed
+call   13 never executed
+branch 14 never executed
+branch 15 never executed
+call   16 never executed
+branch 17 never executed
+branch 18 never executed
+call   19 never executed
+branch 20 never executed
+branch 21 never executed
+call   22 never executed
+call   23 never executed
+call   24 returned 100%
+branch 25 taken 100%
+branch 26 taken 0%
+call   27 returned 100%
+branch 28 taken 100%
+branch 29 taken 0%
+call   30 never executed
+call   31 never executed
+call   32 never executed
+call   33 never executed
+call   34 never executed
+        -:  114:
+        -:  115:// -----
+        -:  116:// solve
+        -:  117:// -----
+        -:  118:
+function _ZN26CollatzFixture_solve1_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN26CollatzFixture_solve1_TestD2Ev called 1 returned 100% blocks executed 75%
+function _ZN26CollatzFixture_solve1_Test8TestBodyEv called 1 returned 100% blocks executed 50%
+function _ZN26CollatzFixture_solve1_TestC2Ev called 1 returned 100% blocks executed 100%
+        5:  119:TEST(CollatzFixture, solve1) {
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+call    4 returned 100%
+call    5 returned 100%
+call    6 returned 100%
+branch  7 taken 0% (fallthrough)
+branch  8 taken 100%
+call    9 never executed
+call   10 returned 100%
+        1:  120:    istringstream r("1 10\n100 200\n201 210\n900 1000\n");
+call    0 returned 100%
+call    1 returned 100%
+branch  2 taken 100% (fallthrough)
+branch  3 taken 0% (throw)
+call    4 returned 100%
+branch  5 taken 100% (fallthrough)
+branch  6 taken 0% (throw)
+call    7 returned 100%
+call    8 returned 100%
+call    9 never executed
+call   10 never executed
+        2:  121:    ostringstream w;
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+call    3 returned 100%
+branch  4 taken 100%
+branch  5 taken 0%
+call    6 never executed
+        1:  122:    collatz_solve(r, w);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        2:  123:    ASSERT_EQ("1 10 20\n100 200 125\n201 210 89\n900 1000 174\n", w.str());}
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+call    3 returned 100%
+branch  4 taken 100% (fallthrough)
+branch  5 taken 0% (throw)
+call    6 returned 100%
+call    7 returned 100%
+branch  8 taken 0% (fallthrough)
+branch  9 taken 100%
+call   10 never executed
+branch 11 never executed
+branch 12 never executed
+call   13 never executed
+branch 14 never executed
+branch 15 never executed
+call   16 never executed
+branch 17 never executed
+branch 18 never executed
+call   19 never executed
+branch 20 never executed
+branch 21 never executed
+call   22 never executed
+call   23 never executed
+call   24 returned 100%
+branch 25 taken 100%
+branch 26 taken 0%
+call   27 returned 100%
+branch 28 taken 100%
+branch 29 taken 0%
+call   30 never executed
+call   31 never executed
+call   32 never executed
+call   33 never executed
+call   34 never executed
+        -:  124:
+function _ZN26CollatzFixture_solve2_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN26CollatzFixture_solve2_TestD2Ev called 1 returned 100% blocks executed 75%
+function _ZN26CollatzFixture_solve2_Test8TestBodyEv called 1 returned 100% blocks executed 50%
+function _ZN26CollatzFixture_solve2_TestC2Ev called 1 returned 100% blocks executed 100%
+        5:  125:TEST(CollatzFixture, solve2) {
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+call    4 returned 100%
+call    5 returned 100%
+call    6 returned 100%
+branch  7 taken 0% (fallthrough)
+branch  8 taken 100%
+call    9 never executed
+call   10 returned 100%
+        1:  126:    istringstream r("50 100\n500 600\n635 736\n4 5\n");
+call    0 returned 100%
+call    1 returned 100%
+branch  2 taken 100% (fallthrough)
+branch  3 taken 0% (throw)
+call    4 returned 100%
+branch  5 taken 100% (fallthrough)
+branch  6 taken 0% (throw)
+call    7 returned 100%
+call    8 returned 100%
+call    9 never executed
+call   10 never executed
+        2:  127:    ostringstream w;
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+call    3 returned 100%
+branch  4 taken 100%
+branch  5 taken 0%
+call    6 never executed
+        1:  128:    collatz_solve(r, w);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        2:  129:    ASSERT_EQ("50 100 119\n500 600 137\n635 736 171\n4 5 6\n", w.str());}
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+call    3 returned 100%
+branch  4 taken 100% (fallthrough)
+branch  5 taken 0% (throw)
+call    6 returned 100%
+call    7 returned 100%
+branch  8 taken 0% (fallthrough)
+branch  9 taken 100%
+call   10 never executed
+branch 11 never executed
+branch 12 never executed
+call   13 never executed
+branch 14 never executed
+branch 15 never executed
+call   16 never executed
+branch 17 never executed
+branch 18 never executed
+call   19 never executed
+branch 20 never executed
+branch 21 never executed
+call   22 never executed
+call   23 never executed
+call   24 returned 100%
+branch 25 taken 100%
+branch 26 taken 0%
+call   27 returned 100%
+branch 28 taken 100%
+branch 29 taken 0%
+call   30 never executed
+call   31 never executed
+call   32 never executed
+call   33 never executed
+call   34 never executed
+        -:  130:
+function _ZN26CollatzFixture_solve3_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN26CollatzFixture_solve3_TestD2Ev called 1 returned 100% blocks executed 75%
+function _ZN26CollatzFixture_solve3_Test8TestBodyEv called 1 returned 100% blocks executed 50%
+function _ZN26CollatzFixture_solve3_TestC2Ev called 1 returned 100% blocks executed 100%
+        5:  131:TEST(CollatzFixture, solve3) {
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+call    4 returned 100%
+call    5 returned 100%
+call    6 returned 100%
+branch  7 taken 0% (fallthrough)
+branch  8 taken 100%
+call    9 never executed
+call   10 returned 100%
+        1:  132:    istringstream r("1 1\n2 100\n888 999\n77 1000\n");
+call    0 returned 100%
+call    1 returned 100%
+branch  2 taken 100% (fallthrough)
+branch  3 taken 0% (throw)
+call    4 returned 100%
+branch  5 taken 100% (fallthrough)
+branch  6 taken 0% (throw)
+call    7 returned 100%
+call    8 returned 100%
+call    9 never executed
+call   10 never executed
+        2:  133:    ostringstream w;
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+call    3 returned 100%
+branch  4 taken 100%
+branch  5 taken 0%
+call    6 never executed
+        1:  134:    collatz_solve(r, w);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+function _GLOBAL__sub_I__ZN25CollatzFixture_read1_Test10test_info_E called 1 returned 100% blocks executed 100%
+function _Z41__static_initialization_and_destruction_0ii called 1 returned 100% blocks executed 100%
+        5:  135:    ASSERT_EQ("1 1 1\n2 100 119\n888 999 174\n77 1000 179\n", w.str());}
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0%
+branch  3 taken 100% (fallthrough)
+branch  4 taken 0%
+call    5 returned 100%
+branch  6 taken 100% (fallthrough)
+branch  7 taken 0% (throw)
+call    8 returned 100%
+branch  9 taken 100% (fallthrough)
+branch 10 taken 0% (throw)
+call   11 returned 100%
+call   12 returned 100%
+branch 13 taken 0% (fallthrough)
+branch 14 taken 100%
+call   15 never executed
+branch 16 never executed
+branch 17 never executed
+call   18 never executed
+branch 19 never executed
+branch 20 never executed
+call   21 never executed
+branch 22 never executed
+branch 23 never executed
+call   24 never executed
+branch 25 never executed
+branch 26 never executed
+call   27 never executed
+call   28 never executed
+call   29 returned 100%
+branch 30 taken 100%
+branch 31 taken 0%
+call   32 returned 100%
+branch 33 taken 100%
+branch 34 taken 0%
+call   35 never executed
+call   36 never executed
+call   37 never executed
+call   38 never executed
+call   39 never executed
+        -:  136:
+        -:  137:
+        -:  138:
+        -:  139:
+        -:  140:/*
+        -:  141:% ls -al /usr/include/gtest/
+        -:  142:...
+        -:  143:gtest.h
+        -:  144:...
+        -:  145:% locate libgtest.a
+        -:  146:/usr/lib/libgtest.a
+        -:  147:...
+        -:  148:% locate libpthread.a
+        -:  149:...
+        -:  150:/usr/lib32/libpthread.a
+        -:  151:% locate libgtest_main.a
+        -:  152:/usr/lib/libgtest_main.a
+        -:  153:...
+        -:  154:% g++-4.8 -fprofile-arcs -ftest-coverage -pedantic -std=c++11 -Wall Collatz.c++ TestCollatz.c++ -o TestCollatz -lgtest -lgtest_main -lpthread
+        -:  155:% valgrind TestCollatz        >  TestCollatz.out 2>&1
+        -:  156:% gcov-4.8 -b Collatz.c++     >> TestCollatz.out
+        -:  157:% gcov-4.8 -b TestCollatz.c++ >> TestCollatz.out
+        -:  158:% cat TestCollatz.out
+        -:  159:==14225== Memcheck, a memory error detector
+        -:  160:==14225== Copyright (C) 2002-2011, and GNU GPL'd, by Julian Seward et al.
+        -:  161:==14225== Using Valgrind-3.7.0 and LibVEX; rerun with -h for copyright info
+        -:  162:==14225== Command: TestCollatz
+        -:  163:==14225==
+        -:  164:Running main() from gtest_main.cc
+        -:  165:[==========] Running 7 tests from 1 test case.
+        -:  166:[----------] Global test environment set-up.
+        -:  167:[----------] 7 tests from Collatz
+        -:  168:[ RUN      ] Collatz.read
+        -:  169:[       OK ] Collatz.read (31 ms)
+        -:  170:[ RUN      ] Collatz.eval_1
+        -:  171:[       OK ] Collatz.eval_1 (5 ms)
+        -:  172:[ RUN      ] Collatz.eval_2
+        -:  173:[       OK ] Collatz.eval_2 (3 ms)
+        -:  174:[ RUN      ] Collatz.eval_3
+        -:  175:[       OK ] Collatz.eval_3 (3 ms)
+        -:  176:[ RUN      ] Collatz.eval_4
+        -:  177:[       OK ] Collatz.eval_4 (3 ms)
+        -:  178:[ RUN      ] Collatz.print
+        -:  179:[       OK ] Collatz.print (17 ms)
+        -:  180:[ RUN      ] Collatz.solve
+        -:  181:[       OK ] Collatz.solve (10 ms)
+        -:  182:[----------] 7 tests from Collatz (88 ms total)
+        -:  183:[----------] Global test environment tear-down
+        -:  184:[==========] 7 tests from 1 test case ran. (132 ms total)
+        -:  185:[  PASSED  ] 7 tests.
+        -:  186:==14225==
+        -:  187:==14225== HEAP SUMMARY:
+        -:  188:==14225==     in use at exit: 0 bytes in 0 blocks
+        -:  189:==14225==   total heap usage: 495 allocs, 495 frees, 70,302 bytes allocated
+        -:  190:==14225==
+        -:  191:==14225== All heap blocks were freed -- no leaks are possible
+        -:  192:==14225==
+        -:  193:==14225== For counts of detected and suppressed errors, rerun with: -v
+        -:  194:==14225== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 2 from 2)
+        -:  195:File 'Collatz.c++'
+        -:  196:Lines executed:100.00% of 17
+        -:  197:Branches executed:100.00% of 18
+        -:  198:Taken at least once:61.11% of 18
+        -:  199:Calls executed:89.47% of 19
+        -:  200:Creating 'Collatz.c++.gcov'
+        -:  201:...
+        -:  202:File 'TestCollatz.c++'
+        -:  203:Lines executed:100.00% of 26
+        -:  204:Branches executed:57.14% of 224
+        -:  205:Taken at least once:28.57% of 224
+        -:  206:Calls executed:54.07% of 209
+        -:  207:Creating 'TestCollatz.c++.gcov'
+        -:  208:...
+        -:  209:*/
