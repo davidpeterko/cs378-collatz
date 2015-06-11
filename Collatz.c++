@@ -63,7 +63,7 @@ int collatz_eval (int i, int j) {
         int cycle = 1;
         int val = start;
 
-        while(val != 1){
+        while(val > 1){
 
             //even
             if((val & 1) == 0){
