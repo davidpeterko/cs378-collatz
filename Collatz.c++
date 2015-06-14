@@ -46,8 +46,6 @@ int collatz_eval (int i, int j) {
         j = temp;       
     }
 
-    assert(i<j);
-
     int end = j+1;
 
     for(int start = i; start < end; start++){
