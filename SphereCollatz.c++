@@ -24,7 +24,13 @@ using namespace std;
 #include <string>   // getline, string
 #include <utility>  // make_pair, pair
 
-int cache_array[1000000];    //should i not make it 1 millino and just take j-i and make that cache size?
+#define CACHE_SIZE 1000000
+
+//Cache
+#ifdef CACHE_SIZE
+int cache_array[CACHE_SIZE];    
+#endif
+
 
 void collatz_solve (istream& r, ostream& w);
 void collatz_print (ostream& w, int i, int j, int v);
