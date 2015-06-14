@@ -91,10 +91,6 @@ TEST(CollatzFixture, eval_5) {
     ASSERT_EQ(20, v);}
 
 
-TEST(CollatzFixture, eval_6) {
-    const int v = collatz_eval(210, 201);
-    ASSERT_EQ(89, v);}
-
 // -----
 // print
 // -----
@@ -140,13 +136,6 @@ TEST(CollatzFixture, solve3) {
     ostringstream w;
     collatz_solve(r, w);
     ASSERT_EQ("1 1 1\n2 100 119\n888 999 174\n77 1000 179\n", w.str());}
-
-TEST(CollatzFixture, solve4) {
-    istringstream r("10 1\n200 100\n210 201\n1000 900\n");
-    ostringstream w;
-    collatz_solve(r, w);
-    ASSERT_EQ("10 1 20\n200 100 125\n210 201 89\n1000 9000 174\n", w.str());}
-
 
 
 /*
