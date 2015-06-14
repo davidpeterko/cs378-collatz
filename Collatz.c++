@@ -13,10 +13,14 @@
 #include <sstream>  // istringstream
 #include <string>   // getline, string
 #include <utility>  // make_pair, pair
-
 #include "Collatz.h"
 
-int cache_array[1000000];    
+#define CACHE_SIZE 1000000
+
+//Cache
+#ifdef CACHE_SIZE
+int cache_array[CACHE_SIZE];    
+#endif
 
 using namespace std;
 
