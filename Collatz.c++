@@ -16,9 +16,8 @@
 
 #include "Collatz.h"
 
-int cache_array[1000000];    //should i not make it 1 millino and just take j-i and make that cache size?
+int cache_array[1000000];    
 
-//This should be before anything that may call or (be it function or declaration) - from HongBing
 using namespace std;
 
 // ------------
@@ -46,6 +45,8 @@ int collatz_eval (int i, int j) {
         i = j;          
         j = temp;       
     }
+
+    assert(i<j);
 
     int end = j+1;
 
