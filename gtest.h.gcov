@@ -258,8 +258,8 @@
         -:  253://   Expected: Foo() is even
         -:  254://     Actual: it's 5
         -:  255://
-function _ZN7testing15AssertionResultD2Ev called 21 returned 100% blocks executed 100%
-       21:  256:class GTEST_API_ AssertionResult {
+function _ZN7testing15AssertionResultD2Ev called 22 returned 100% blocks executed 100%
+       22:  256:class GTEST_API_ AssertionResult {
 call    0 returned 100%
         -:  257: public:
         -:  258:  // Copy constructor.
@@ -269,8 +269,8 @@ call    0 returned 100%
         -:  262:  explicit AssertionResult(bool success) : success_(success) {}
         -:  263:
         -:  264:  // Returns true iff the assertion succeeded.
-function _ZNK7testing15AssertionResultcvbEv called 21 returned 100% blocks executed 100%
-       21:  265:  operator bool() const { return success_; }  // NOLINT
+function _ZNK7testing15AssertionResultcvbEv called 22 returned 100% blocks executed 100%
+       22:  265:  operator bool() const { return success_; }  // NOLINT
         -:  266:
         -:  267:  // Returns the assertion's negation. Used with EXPECT/ASSERT_FALSE.
         -:  268:  AssertionResult operator!() const;
@@ -1523,8 +1523,8 @@ function _ZN7testing8internal11CmpHelperEQIA14_cSsEENS_15AssertionResultEPKcS5_R
 function _ZN7testing8internal11CmpHelperEQIA12_cSsEENS_15AssertionResultEPKcS5_RKT_RKT0_ called 1 returned 100% blocks executed 36%
 function _ZN7testing8internal11CmpHelperEQIA13_cSsEENS_15AssertionResultEPKcS5_RKT_RKT0_ called 1 returned 100% blocks executed 36%
 function _ZN7testing8internal11CmpHelperEQIA9_cSsEENS_15AssertionResultEPKcS5_RKT_RKT0_ called 1 returned 100% blocks executed 36%
-function _ZN7testing8internal11CmpHelperEQIiiEENS_15AssertionResultEPKcS4_RKT_RKT0_ called 14 returned 100% blocks executed 31%
-       21: 1438:AssertionResult CmpHelperEQ(const char* expected_expression,
+function _ZN7testing8internal11CmpHelperEQIiiEENS_15AssertionResultEPKcS4_RKT_RKT0_ called 15 returned 100% blocks executed 31%
+       22: 1438:AssertionResult CmpHelperEQ(const char* expected_expression,
         -: 1439:                            const char* actual_expression,
         -: 1440:                            const T1& expected,
         -: 1441:                            const T2& actual) {
@@ -1534,7 +1534,7 @@ function _ZN7testing8internal11CmpHelperEQIiiEENS_15AssertionResultEPKcS4_RKT_RK
         -: 1445:                                // signed/unsigned mismatch.
         -: 1446:#endif
         -: 1447:
-       21: 1448:  if (expected == actual) {
+       22: 1448:  if (expected == actual) {
 call    0 returned 100%
 branch  1 taken 100% (fallthrough)
 branch  2 taken 0%
@@ -1558,7 +1558,7 @@ branch 19 taken 100% (fallthrough)
 branch 20 taken 0%
 branch 21 taken 100% (fallthrough)
 branch 22 taken 0%
-       21: 1449:    return AssertionSuccess();
+       22: 1449:    return AssertionSuccess();
 call    0 returned 100%
 call    1 returned 100%
 call    2 returned 100%
@@ -1692,13 +1692,13 @@ function _ZN7testing8internal8EqHelperILb0EE7CompareIA14_cSsEENS_15AssertionResu
 function _ZN7testing8internal8EqHelperILb0EE7CompareIA12_cSsEENS_15AssertionResultEPKcS7_RKT_RKT0_ called 1 returned 100% blocks executed 100%
 function _ZN7testing8internal8EqHelperILb0EE7CompareIA13_cSsEENS_15AssertionResultEPKcS7_RKT_RKT0_ called 1 returned 100% blocks executed 100%
 function _ZN7testing8internal8EqHelperILb0EE7CompareIA9_cSsEENS_15AssertionResultEPKcS7_RKT_RKT0_ called 1 returned 100% blocks executed 100%
-function _ZN7testing8internal8EqHelperILb0EE7CompareIiiEENS_15AssertionResultEPKcS6_RKT_RKT0_ called 14 returned 100% blocks executed 100%
-       21: 1480:  static AssertionResult Compare(const char* expected_expression,
+function _ZN7testing8internal8EqHelperILb0EE7CompareIiiEENS_15AssertionResultEPKcS6_RKT_RKT0_ called 15 returned 100% blocks executed 100%
+       22: 1480:  static AssertionResult Compare(const char* expected_expression,
         -: 1481:                                 const char* actual_expression,
         -: 1482:                                 const T1& expected,
         -: 1483:                                 const T2& actual) {
         -: 1484:    return CmpHelperEQ(expected_expression, actual_expression, expected,
-       21: 1485:                       actual);
+       22: 1485:                       actual);
 call    0 returned 100%
 call    1 returned 100%
 call    2 returned 100%

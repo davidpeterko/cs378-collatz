@@ -1,62 +1,64 @@
-==10994== Memcheck, a memory error detector
-==10994== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
-==10994== Using Valgrind-3.10.0.SVN and LibVEX; rerun with -h for copyright info
-==10994== Command: ./TestCollatz
-==10994== 
+==5523== Memcheck, a memory error detector
+==5523== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==5523== Using Valgrind-3.10.0.SVN and LibVEX; rerun with -h for copyright info
+==5523== Command: ./TestCollatz
+==5523== 
 Running main() from gtest_main.cc
-[==========] Running 16 tests from 1 test case.
+[==========] Running 17 tests from 1 test case.
 [----------] Global test environment set-up.
-[----------] 16 tests from CollatzFixture
+[----------] 17 tests from CollatzFixture
 [ RUN      ] CollatzFixture.read1
-[       OK ] CollatzFixture.read1 (17 ms)
+[       OK ] CollatzFixture.read1 (15 ms)
 [ RUN      ] CollatzFixture.read2
 [       OK ] CollatzFixture.read2 (2 ms)
 [ RUN      ] CollatzFixture.read3
-[       OK ] CollatzFixture.read3 (3 ms)
+[       OK ] CollatzFixture.read3 (2 ms)
 [ RUN      ] CollatzFixture.read4
 [       OK ] CollatzFixture.read4 (3 ms)
 [ RUN      ] CollatzFixture.read5
 [       OK ] CollatzFixture.read5 (2 ms)
 [ RUN      ] CollatzFixture.eval_1
-[       OK ] CollatzFixture.eval_1 (5 ms)
+[       OK ] CollatzFixture.eval_1 (2 ms)
 [ RUN      ] CollatzFixture.eval_2
-[       OK ] CollatzFixture.eval_2 (3 ms)
+[       OK ] CollatzFixture.eval_2 (2 ms)
 [ RUN      ] CollatzFixture.eval_3
-[       OK ] CollatzFixture.eval_3 (3 ms)
+[       OK ] CollatzFixture.eval_3 (1 ms)
 [ RUN      ] CollatzFixture.eval_4
-[       OK ] CollatzFixture.eval_4 (3 ms)
+[       OK ] CollatzFixture.eval_4 (2 ms)
+[ RUN      ] CollatzFixture.eval_5
+[       OK ] CollatzFixture.eval_5 (1 ms)
 [ RUN      ] CollatzFixture.print1
-[       OK ] CollatzFixture.print1 (9 ms)
+[       OK ] CollatzFixture.print1 (5 ms)
 [ RUN      ] CollatzFixture.print2
 [       OK ] CollatzFixture.print2 (3 ms)
 [ RUN      ] CollatzFixture.print3
-[       OK ] CollatzFixture.print3 (3 ms)
+[       OK ] CollatzFixture.print3 (2 ms)
 [ RUN      ] CollatzFixture.print4
 [       OK ] CollatzFixture.print4 (3 ms)
 [ RUN      ] CollatzFixture.solve1
-[       OK ] CollatzFixture.solve1 (8 ms)
+[       OK ] CollatzFixture.solve1 (7 ms)
 [ RUN      ] CollatzFixture.solve2
-[       OK ] CollatzFixture.solve2 (5 ms)
+[       OK ] CollatzFixture.solve2 (3 ms)
 [ RUN      ] CollatzFixture.solve3
-[       OK ] CollatzFixture.solve3 (9 ms)
-[----------] 16 tests from CollatzFixture (91 ms total)
+[       OK ] CollatzFixture.solve3 (5 ms)
+[----------] 17 tests from CollatzFixture (67 ms total)
 
 [----------] Global test environment tear-down
-[==========] 16 tests from 1 test case ran. (137 ms total)
-[  PASSED  ] 16 tests.
-==10994== 
-==10994== HEAP SUMMARY:
-==10994==     in use at exit: 0 bytes in 0 blocks
-==10994==   total heap usage: 498 allocs, 498 frees, 73,917 bytes allocated
-==10994== 
-==10994== All heap blocks were freed -- no leaks are possible
-==10994== 
-==10994== For counts of detected and suppressed errors, rerun with: -v
-==10994== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+[==========] 17 tests from 1 test case ran. (92 ms total)
+[  PASSED  ] 17 tests.
+==5523== 
+==5523== HEAP SUMMARY:
+==5523==     in use at exit: 0 bytes in 0 blocks
+==5523==   total heap usage: 515 allocs, 515 frees, 75,825 bytes allocated
+==5523== 
+==5523== All heap blocks were freed -- no leaks are possible
+==5523== 
+==5523== For counts of detected and suppressed errors, rerun with: -v
+==5523== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 File 'Collatz.c++'
-Lines executed:92.11% of 38
+Lines executed:100.00% of 38
 Branches executed:100.00% of 40
-Taken at least once:65.00% of 40
+Taken at least once:67.50% of 40
 Calls executed:79.17% of 24
 Creating 'Collatz.c++.gcov'
 
@@ -161,17 +163,17 @@ No calls
 Creating 'char_traits.h.gcov'
 
 File 'TestCollatz.c++'
-Lines executed:100.00% of 68
-Branches executed:61.99% of 442
-Taken at least once:31.00% of 442
-Calls executed:53.52% of 512
+Lines executed:100.00% of 71
+Branches executed:61.74% of 460
+Taken at least once:30.87% of 460
+Calls executed:53.56% of 534
 Creating 'TestCollatz.c++.gcov'
 
 File '/usr/include/gtest/internal/gtest-internal.h'
 Lines executed:80.00% of 5
-Branches executed:100.00% of 66
-Taken at least once:50.00% of 66
-Calls executed:73.28% of 131
+Branches executed:100.00% of 70
+Taken at least once:50.00% of 70
+Calls executed:73.38% of 139
 Creating 'gtest-internal.h.gcov'
 
 File '/usr/include/c++/4.8/iostream'
