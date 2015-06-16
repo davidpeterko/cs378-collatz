@@ -1,0 +1,197 @@
+commit 78a91d529ba8dd893fc72ac61491d9c8fd470af0
+Author: David Ko <davidko@cs.utexas.edu>
+Date:   Mon Jun 15 18:49:40 2015 -0500
+
+    ran final test
+
+commit 62343357664ad2a7f4ab3a561f3c308814ef377b
+Author: david ko <davidpeterko@gmail.com>
+Date:   Sun Jun 14 16:34:21 2015 -0500
+
+    Added ifdef tag to SphereCollatz.c++
+
+commit 4985607a2ffbbb8579321981c4a22a99ef916eab
+Author: david ko <davidpeterko@gmail.com>
+Date:   Sun Jun 14 16:30:08 2015 -0500
+
+    Implemented #ifdef and #endif tags in Collatz.c++
+
+commit 30d0c46770c55f56f46d24f7840207a90f21b8c4
+Author: david ko <davidpeterko@gmail.com>
+Date:   Sat Jun 13 21:22:06 2015 -0500
+
+    Removed a test.
+
+commit 43943c312483f026eb412e8287522da539377040
+Author: david ko <davidpeterko@gmail.com>
+Date:   Sat Jun 13 21:14:39 2015 -0500
+
+    Fixed a test in TestCollatz.c++
+
+commit d625a07f1a9b2af99f23e3e51c9e96ca319016cf
+Author: david ko <davidpeterko@gmail.com>
+Date:   Sat Jun 13 21:12:51 2015 -0500
+
+    Fixed issues with assertions failing on Travis CI
+
+commit 38726e6930962153f6fb3cd86ff014f3d05172fd
+Author: david ko <davidpeterko@gmail.com>
+Date:   Sat Jun 13 21:09:23 2015 -0500
+
+    Added more tests in TestCollatz.c++ to get more coverage.
+
+commit 9a482e6bec960e20391b1028aaaccb24a621a04d
+Author: david ko <davidpeterko@gmail.com>
+Date:   Sat Jun 13 21:04:30 2015 -0500
+
+    Added new assertion in collatz.c++
+
+commit 2173efbf7e95c93c89e77be781eac2c1669007ca
+Author: david ko <davidpeterko@gmail.com>
+Date:   Sat Jun 13 17:00:24 2015 -0500
+
+    Updated make file with the correct file names.
+
+commit ed61f8a11bf91a8401651c39c0149f3416a2d176
+Author: david ko <davidpeterko@gmail.com>
+Date:   Sat Jun 13 16:57:30 2015 -0500
+
+    Added the 4 public test repo files into my private code repo
+
+commit efa12c8f367a5452415fe3c3a8fb3f30aeede38d
+Author: david ko <davidpeterko@gmail.com>
+Date:   Sat Jun 13 16:48:41 2015 -0500
+
+    added the 100 tests to in file to push to travis ci testing.
+
+commit 757dd7a14706d60155634e7dc4536446eaa3b71c
+Author: david ko <davidpeterko@gmail.com>
+Date:   Fri Jun 12 01:55:34 2015 -0500
+
+    Late night commit of some comments for SpherCollatz.c++ and Collatz.c++; ran SphereCollatz.c++ again on sphere and was accepted.
+
+commit 177bf4a0db22c9f3e9d4ad3086b69d00d30eefe2
+Author: David Ko <davidko@cs.utexas.edu>
+Date:   Thu Jun 11 18:31:46 2015 -0500
+
+    Fixed SphereCollatz.c++ ->> it runs and is accepted on Spheregit add .!
+
+commit e4a95b50bb83e74dfffc11d6b4fc5f68c8a60b09
+Author: David Ko <davidko@cs.utexas.edu>
+Date:   Thu Jun 11 18:09:11 2015 -0500
+
+    Added SphereCollatz.c++
+
+commit ed10693da0afbbd49768807d7a8bc56a72096773
+Author: David Ko <davidko@cs.utexas.edu>
+Date:   Thu Jun 11 18:03:33 2015 -0500
+
+    Finalize, fixed cache_array declaration to int cache_array[1000000];
+
+commit 218c273a38e51ee53b9c9be6892738578187e682
+Author: David Ko <davidko@cs.utexas.edu>
+Date:   Thu Jun 11 17:47:39 2015 -0500
+
+    Fixed the problems with TestCollatz.c++ -> build should be succeeding on Travis CI.
+
+commit b36731c50b2409fdc14f88a4cd3cdd3b37ef710f
+Author: david ko <davidpeterko@gmail.com>
+Date:   Thu Jun 11 17:13:38 2015 -0500
+
+    Cleaned up code. This build will fail due to no gtest on home computer.
+
+commit 12fc9a7f7a882100ee3dd8d072793747ef7e78ed
+Author: david ko <davidpeterko@gmail.com>
+Date:   Thu Jun 11 16:58:29 2015 -0500
+
+    Added assertions for Collatz.c++
+
+commit c2f20b7f525705c4640dd2fb5a356816dd6292fb
+Author: david ko <davidpeterko@gmail.com>
+Date:   Thu Jun 11 16:47:50 2015 -0500
+
+    Added new unit tests, average of 3 per function in TestCollatz.c++
+
+commit eb8fc1512cb95f0159862108161fafa4f9c77b43
+Author: david ko <davidpeterko@gmail.com>
+Date:   Thu Jun 11 06:11:12 2015 -0500
+
+    installed g++ properly, ran new test.
+
+commit 58e04c44bb58a468dbfe2cb7d9535ff8d81ee0f2
+Author: David Ko <davidko@cs.utexas.edu>
+Date:   Wed Jun 10 17:15:12 2015 -0500
+
+    last commit to dev-branch before leaving campus to work on home. Added comments and sudo code for checking ranges j > i, but produced 0's on output, need to debug.
+
+commit aeda55cb0c84201ac3d8764f431e2583ec4b8d80
+Author: David Ko <davidko@cs.utexas.edu>
+Date:   Wed Jun 10 17:11:49 2015 -0500
+
+    added soem code for checking when range j > i.
+
+commit 42716e0a53159590b4b0f736eef3646fbbd0ff07
+Author: david ko <davidpeterko@gmail.com>
+Date:   Wed Jun 10 00:28:47 2015 -0500
+
+    one last correction with code structure.
+
+commit 57dfea76095ebb2ffe3c1e4df33fda0b0ee5e6ba
+Author: david ko <davidpeterko@gmail.com>
+Date:   Wed Jun 10 00:19:53 2015 -0500
+
+    redid the cycle value
+
+commit 6b53434f22c6a8ed76c3ea459a75263d2e5f7aed
+Author: david ko <davidpeterko@gmail.com>
+Date:   Tue Jun 9 21:15:25 2015 -0500
+
+    temp testing, switch variable values.
+
+commit 9c8eeb2e58cd8d1b90c8bc2828e18c7cf4994d56
+Author: david ko <davidpeterko@gmail.com>
+Date:   Tue Jun 9 21:07:07 2015 -0500
+
+    Fixed the variable cycle, did not account for the first cycle start = 1.
+
+commit 740a8bb03ed735ba1bd32528ed68218bbade9355
+Author: david ko <davidpeterko@gmail.com>
+Date:   Tue Jun 9 20:40:04 2015 -0500
+
+    Updated eval, code last Travis CI build unsuccessful, hang on for loop.
+
+commit b9f08d13632768e77f19903f7a9db06674c60e2d
+Author: david ko <davidpeterko@gmail.com>
+Date:   Tue Jun 9 18:59:58 2015 -0500
+
+    added code for collatz_eva
+
+commit 1c7a9128bc3aafe33ae50320d076ce489e9f6cb7
+Author: david ko <davidpeterko@gmail.com>
+Date:   Tue Jun 9 18:01:54 2015 -0500
+
+    reformatted the travis yml
+
+commit 0100839cd274bffb6295f38984377077adde6c99
+Author: david ko <davidpeterko@gmail.com>
+Date:   Tue Jun 9 17:56:59 2015 -0500
+
+    added sudo: required to travis yml
+
+commit 2f1d1db25f13f4dbdf834342bb6f8b3793f6c27a
+Author: david ko <davidpeterko@gmail.com>
+Date:   Tue Jun 9 17:54:00 2015 -0500
+
+    Addes sudo: required line to the travis yml file.
+
+commit 4821b65b51b751e8ce63d2eca44b12ce5cfba8df
+Author: david ko <davidpeterko@gmail.com>
+Date:   Tue Jun 9 17:41:45 2015 -0500
+
+    added the .travis.yml file for Travis CI initial push.
+
+commit de9cef890c0bd0e9162866364cc8e3b70964a93c
+Author: david ko <davidpeterko@gmail.com>
+Date:   Tue Jun 9 17:20:55 2015 -0500
+
+    Initial commit, pushed correct starter files with the names to the repo.
