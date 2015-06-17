@@ -42,6 +42,8 @@ pair<int, int> collatz_read (const string& s) {
 int collatz_eval (int i, int j) {    
     assert(i > 0);
     assert(j > 0);
+    assert(i < 1000000);
+    assert(j < 1000000);
 
     //Swaps values if i j ranges are backwards
     if( i > j){
