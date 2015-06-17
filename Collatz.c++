@@ -52,6 +52,8 @@ int collatz_eval (int i, int j) {
 
     int end = j+1;
 
+    /** FIND CYCLE LENGTH **/
+
     for(int start = i; start < end; start++){
 
         int cycle = 1;
